@@ -13,7 +13,7 @@ script AppDelegate
 	
 	on applicationWillFinishLaunching_(aNotification)
 		do shell script "open -a 'golem.app' --args '--mainnet'"
-        tell me to quit
+		tell me to quit
 	end applicationWillFinishLaunching_
 	
 	on applicationShouldTerminate_(sender)
