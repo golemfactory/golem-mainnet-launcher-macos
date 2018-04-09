@@ -12,7 +12,7 @@ script AppDelegate
 	property theWindow : missing value
 	
 	on applicationWillFinishLaunching_(aNotification)
-		do shell script "open -a 'golem.app' --args '--mainnet'"
+		do shell script "open -a golem --args '--mainnet'"
 		tell me to quit
 	end applicationWillFinishLaunching_
 	
