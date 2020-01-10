@@ -15,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20830DCF23C8FAFA004C4262 /* golem mainnet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "golem mainnet.entitlements"; sourceTree = "<group>"; };
 		AE3986C4205981F1007BCE10 /* golem mainnet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "golem mainnet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3986C7205981F1007BCE10 /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
 		AE3986CA205981F1007BCE10 /* AppDelegate.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = AppDelegate.applescript; sourceTree = "<group>"; };
@@ -64,6 +65,7 @@
 		AE3986C9205981F1007BCE10 /* Golem */ = {
 			isa = PBXGroup;
 			children = (
+				20830DCF23C8FAFA004C4262 /* golem mainnet.entitlements */,
 				AE3986CA205981F1007BCE10 /* AppDelegate.applescript */,
 				AE3986CC205981F1007BCE10 /* Assets.xcassets */,
 				AE3986CE205981F1007BCE10 /* MainMenu.xib */,
@@ -99,7 +101,7 @@
 		AE3986BC205981F1007BCE10 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Golem Factory GmbH";
 				TargetAttributes = {
 					AE3986C3205981F1007BCE10 = {
@@ -273,11 +275,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Golem/golem mainnet.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BDLL7N6C3A;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Golem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MARKETING_VERSION = 1.2;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = golem.mainnet;
 				PRODUCT_NAME = "golem mainnet";
@@ -288,11 +295,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Golem/golem mainnet.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BDLL7N6C3A;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Golem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MARKETING_VERSION = 1.2;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = golem.mainnet;
 				PRODUCT_NAME = "golem mainnet";
